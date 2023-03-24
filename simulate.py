@@ -10,9 +10,10 @@ p.setGravity(0,0,-9.8)
 
 #floor
 planeId = p.loadURDF("plane.urdf")
+robotId = p.loadURDF("body.urdf")
 
 #loading the world
-p.loadSDF("boxes.sdf")
+p.loadSDF("world.sdf")
 
 for i in range(0, 1000):
     p.stepSimulation()
