@@ -2,11 +2,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 #printing sensor values
-backLegSensorValues = np.load('data/backLegSensorValues.npy')
-frontLegSensorValues = np.load('data/frontLegSensorValues.npy')
+BackLeg_targetAngles = np.load('data/BackLeg_targetAngles.npy')
+FrontLeg_targetAngles = np.load('data/FrontLeg_targetAngles.npy')
 
-plt.plot(backLegSensorValues, label = "BackLeg", linewidth=2)
-plt.plot(frontLegSensorValues, label = "FrontLeg")
+plt.plot(BackLeg_targetAngles, label = "BackLeg_targetAngles")
+plt.plot(FrontLeg_targetAngles, label = "FrontLeg_targetAngles")
+
 plt.legend()
 
 plt.show()
